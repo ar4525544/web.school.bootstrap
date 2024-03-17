@@ -1,0 +1,81 @@
+ // Function to open the login modal
+    function openLoginModal() {
+      document.getElementById('loginModal').style.display = 'block';
+      document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Function to close the login modal
+    function closeLoginModal() {
+      document.getElementById('loginModal').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+    }
+
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        
+        
+
+      window.location.href = this.action;
+
+      closeLoginModal();
+    });
+    function openRegisterModal() {
+        document.getElementById('registerModal').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+      }
+  
+      // Function to close the registration modal
+      function closeRegisterModal() {
+        document.getElementById('registerModal').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+      }
+  
+      // Event listener for the form submission
+      document.getElementById('registerForm').addEventListener('submit', function(event) {
+        // You can add additional registration logic here if needed
+        // For simplicity, let's assume the form is valid and always redirect
+        // Prevent the default form submission behavior
+        event.preventDefault();
+  
+        // Redirect to the next page
+        window.location.href = this.action;
+  
+        // Close the modal after submission (optional)
+        closeRegisterModal();
+      });
+  
+      // Event listener to close the modal when clicking outside of it
+      document.getElementById('overlay').addEventListener('click', function() {
+        closeRegisterModal();
+      });
+      function openModal(Home) {
+        document.getElementById("myModal").style.display = "flex";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    // Close the modal if the user clicks outside of it
+    window.onclick = function (event) {
+        if (event.target === document.getElementById("myModal")) {
+            closeModal();
+        }
+    };
+    
+	let valueDisplays = document.querySelectorAll(".num");
+  let interval = 2000;
+
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute
+      ("data-val"));
+ 
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function(){
+      startValue += 1;
+      valueDisplay.textContent = startValue;
+      if(startValue == endValue){
+        clearInterval(counter);
+      }
+    }, duration)
+  })

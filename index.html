@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assests/css/style.css">
+  </head>
+  <body>
+    
+       <nav class="navbar navbar-expand-lg  contact-nav">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="tel:+923309282156"><span class="material-symbols-outlined">
+            call
+            </span></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="tel:+923309282156">+923309282156</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="material-symbols-outlined timing-icon">
+                    schedule
+                    </span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">mon-fri 8:00-12:00</a>
+              </li>
+            </ul>
+
+             <button class="login-btn" onclick="openLoginModal()">Login /</button>
+
+             <div id="overlay" onclick="closeLoginModal()"></div>
+             <div id="loginModal">
+             <form id="loginForm" action="next-page.html" method="post">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required><br>
+
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required><br>
+
+               <input style="display: block;" type="submit" value="Login">
+               <div  class=" mx-auto">
+                <div class="facebook-icon"> <a href="https://www.facebook.com" target="self"></a><i class="bi bi-facebook"></i></div>
+               <div class="gmail-icon"><a href="https://www.Gmail.com"><i class="bi bi-google"></i></a></div>
+               <div class="instagram-icon"><a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a></div>
+               <div class="twitter-icon"><a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a></div>
+               </div>
+             </form>
+               </div>
+
+
+
+              <button class="register-btn" onclick="openRegisterModal()">  Register</button>
+
+              <div id="overlay" onclick="closeRegisterModal()"></div>
+               <div id="registerModal">
+               <form id="registerForm" action="next-page.html" method="post">
+                 <label for="username">Username:</label><br>
+                  <input type="text" id="username" name="username" required><br>
+
+                <label for="email">Email:</label><br>
+                  <input type="email" id="email" name="email" required><br>
+
+                  <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+
+                   <input type="submit" value="Register">
+                   <div  class=" mx-auto">
+                    <div class="facebook-icon"> <a href=""><i class="bi bi-facebook"></i></a></div>
+                   <div class="gmail-icon"><a href=""><i class="bi bi-google"></i></a></div>
+                   <div class="instagram-icon"><a href=""><i class="bi bi-instagram"></i></a></div>
+                   <div class="twitter-icon"><a href=""><i class="bi bi-twitter"></i></a></div>
+                   </div>
+                   </form>
+                   </div>
+
+
+
+
+
+            
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar  navbar-expand-lg bg-body-tertiary logo-nav">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="assests/img/logo.png" alt=""></a>
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <button class="nav-link" onclick="openModal()">Home</button>
+  
+
+
+                 <div id="myModal" class="modal">
+                <div class="modal-content">
+               <span class="close" onclick="closeModal()">&times;</span>
+
+                 <header>
+                   <h1>Our School</h1>
+                     <p>Empowering Minds, Shaping Futures</p>
+                   </header>
+
+                  <section class="hero">
+                <h2>Welcome to Our School</h2>
+                <p>Providing quality education and fostering holistic development.</p>
+                <a href="javascript:void(0);" onclick="closeModal()" class="cta-button">Close Modal</a>
+                   </section>
+
+
+
+
+
+
+
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" onclick="openModal()">about</button>
+  
+
+
+                 <div id="myModal" class="modal">
+                <div class="modal-content">
+               <span class="close" onclick="closeModal()">&times;</span>
+
+                 <header>
+                   <h1>Our School</h1>
+                     <p>Empowering Minds, Shaping Futures</p>
+                   </header>
+
+                  <section class="hero">
+                <h2>Welcome to Our School</h2>
+                <p>Providing quality education and fostering holistic development.</p>
+                <a href="javascript:void(0);" onclick="closeModal()" class="cta-button">Close Modal</a>
+                   </section>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" onclick="openModal()">courses</button>
+  
+
+
+                 <div id="myModal" class="modal">
+                <div class="modal-content">
+               <span class="close" onclick="closeModal()">&times;</span>
+
+                 <header>
+                   <h1>Our School</h1>
+                     <p>Empowering Minds, Shaping Futures</p>
+                   </header>
+
+                  <section class="hero">
+                <h2>Welcome to Our School</h2>
+                <p>Providing quality education and fostering holistic development.</p>
+                <a href="javascript:void(0);" onclick="closeModal()" class="cta-button">Close Modal</a>
+                   </section>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" onclick="openModal()">teachers</button>
+  
+
+
+                 <div id="myModal" class="modal">
+                <div class="modal-content">
+               <span class="close" onclick="closeModal()">&times;</span>
+
+                 <header>
+                   <h1>Our School</h1>
+                     <p>Empowering Minds, Shaping Futures</p>
+                   </header>
+
+                  <section class="hero">
+                <h2>Welcome to Our School</h2>
+                <p>Providing quality education and fostering holistic development.</p>
+                <a href="javascript:void(0);" onclick="closeModal()" class="cta-button">Close Modal</a>
+                   </section>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" onclick="openModal()">Events</button>
+  
+
+
+                 <div id="myModal" class="modal">
+                <div class="modal-content">
+               <span class="close" onclick="closeModal()">&times;</span>
+
+                 <header>
+                   <h1>Our School</h1>
+                     <p>Empowering Minds, Shaping Futures</p>
+                   </header>
+
+                  <section class="hero">
+                <h2>Welcome to Our School</h2>
+                <p>Providing quality education and fostering holistic development.</p>
+                <a href="javascript:void(0);" onclick="closeModal()" class="cta-button">Close Modal</a>
+                   </section>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link" onclick="openModal()">contacts</button>
+  
+
+
+                 <div id="myModal" class="modal">
+                <div class="modal-content">
+               <span class="close" onclick="closeModal()">&times;</span>
+
+                 <header>
+                   <h1>Our School</h1>
+                     <p>Empowering Minds, Shaping Futures</p>
+                   </header>
+
+                  <section class="hero">
+                <h2>Welcome to Our School</h2>
+                <p>Providing quality education and fostering holistic development.</p>
+                <a href="javascript:void(0);" onclick="closeModal()" class="cta-button">Close Modal</a>
+                   </section>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assests/img/banner 1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block  banner-car">
+             
+          </div>
+         
+
+        </div>
+        
+        
+      </div>
+      
+
+
+
+      <div class="our-activites">
+       
+            <div class="heading">
+                <h2>OUR  ACTIVITES</h2>
+                <div class="lead-line" style="margin-bottom: 20px;
+                margin-top: 0;">
+                    <img src="assests/img/graduation-hat.png" alt="">
+                </div>
+                <p>There are many varieations of passages loream Ipsum maksu rez majority have</p>
+               </div><!-- /.heading -->
+             </div>
+
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+          <div class="card" >
+            <span><img src="assests/img/003-student.png" alt=""></span><br>
+            <div class="card-body">
+              
+                 <h3>OUR TEACHER</h3><br>
+                 
+              <p>There are many varieations of passages loream Ipsum maksu rez majority have only alternation some form,have only</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+          <div class="card" >
+            <span><img src="assests/img/004-trophy.png" alt=""></span><br>
+            <div class="card-body">
+              
+                 <h3> SPORTS</h3><br>
+              <p>There are many varieations of passages loream Ipsum maksu rez majority have only alternation some form,have only</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+          <div class="card" >
+            <span><img src="assests/img/002-bus.png" alt=""></span><br>
+            <div class="card-body">
+              
+                 <h3>BUS SERVICE</h3><br>
+              <p>There are many varieations of passages loream Ipsum maksu rez majority have only alternation some form,have only</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+          <div class="card" >
+            <span><img src="assests/img/005-music.png" alt=""></span><br>
+            <div class="card-body">
+            
+                 <h3>MUSIC CLASS</h3><br>
+              <p>There are many varieations of passages loream Ipsum maksu rez majority have only alternation some form,have only</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+          <div class="card" >
+            <span><img src="assests/img/001-monitor.png" alt=""></span><br>
+            <div class="card-body">
+              
+                 <h3>LANGUAGE</h3><br>
+              <p>There are many varieations of passages loream Ipsum maksu rez majority have only alternation some form,have only</p>
+              
+            </div>
+          </div>
+        </div>
+       <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+          <div class="card" >
+            <span><img src="assests/img/006-fruit.png" alt=""></span><br>
+            <div class="card-body">
+              
+                 <h3>CUSTOM FOOD</h3><br>
+              <p>There are many varieations of passages loream Ipsum maksu rez majority have only alternation some form,have only</p>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+    
+    
+      <div class="gallery">
+           <div class="heading">
+             <h2> GALLERY </h2>
+             <div class="lead-line" style="margin-bottom: 20px;
+             margin-top: 0;">
+                 <img src="assests/img/graduation-hat.png" alt="">
+             </div>
+             <p>There are many varieations of passages loream Ipsum maksu rez majority have</p>
+             <div class="container">
+              <div>
+                 <ul>
+                      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="true">ALL</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-creative-tab" data-bs-toggle="pill" data-bs-target="#pills-creative" type="button" role="tab" aria-controls="pills-creative" aria-selected="false">CREATIVE </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-sports-tab" data-bs-toggle="pill" data-bs-target="#pills-sports" type="button" role="tab" aria-controls="pillssports" aria-selected="false">SPORTS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-class-tab" data-bs-toggle="pill" data-bs-target="#pills-class" type="button" role="tab" aria-controls="pills-class" aria-selected="false">CLASS</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-videos-tab" data-bs-toggle="pill" data-bs-target="#pills-videos" type="button" role="tab" aria-controls="pills-videos" aria-selected="false">VIDEOS</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">
+                          <div class="container">
+                            <div class="grid-parent">
+                              <div class="grid-item one">
+                                <img src="assests/img/pic 1 for grid.jpg" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 3.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 4.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item four">
+                                <img src="assests/img/for grid pic 2.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 5.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item ">
+                                <img src="assests/img/css grid 6.webp" alt="">
+                              </div><!-- /.grid-item -->
+                            </div><!-- /.grid-parent -->
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-creative" role="tabpanel" aria-labelledby="pills-creative-tab" tabindex="0">
+                          <div class="container">
+                            <div class="grid-parent">
+                              <div class="grid-item one">
+                                <img src="assests/img/pic 1 for grid.jpg" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 3.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 4.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item four">
+                                <img src="assests/img/for grid pic 2.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 5.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item ">
+                                <img src="assests/img/css grid 6.webp" alt="">
+                              </div><!-- /.grid-item -->
+                            </div><!-- /.grid-parent -->
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-sports" role="tabpanel" aria-labelledby="pills-sports-tab" tabindex="0">
+                          <div class="container">
+                            <div class="grid-parent">
+                              <div class="grid-item one">
+                                <img src="assests/img/pic 1 for grid.jpg" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 3.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 4.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item four">
+                                <img src="assests/img/for grid pic 2.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 5.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item ">
+                                <img src="assests/img/css grid 6.webp" alt="">
+                              </div><!-- /.grid-item -->
+                            </div><!-- /.grid-parent -->
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-class" role="tabpanel" aria-labelledby="pills-class-tab" tabindex="0">
+                          <div class="container">
+                            <div class="grid-parent">
+                              <div class="grid-item one">
+                                <img src="assests/img/pic 1 for grid.jpg" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 3.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 4.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item four">
+                                <img src="assests/img/for grid pic 2.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 5.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item ">
+                                <img src="assests/img/css grid 6.webp" alt="">
+                              </div><!-- /.grid-item -->
+                            </div><!-- /.grid-parent -->
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-videos" role="tabpanel" aria-labelledby="pills-videos-tab" tabindex="0">
+                          <div class="container">
+                            <div class="grid-parent">
+                              <div class="grid-item one">
+                                <img src="assests/img/pic 1 for grid.jpg" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 3.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 4.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item four">
+                                <img src="assests/img/for grid pic 2.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item">
+                                <img src="assests/img/css grid 5.webp" alt="">
+                              </div><!-- /.grid-item -->
+                              <div class="grid-item ">
+                                <img src="assests/img/css grid 6.webp" alt="">
+                              </div><!-- /.grid-item -->
+                            </div><!-- /.grid-parent -->
+                          </div>
+                        </div>
+                       
+                 </ul>
+                 <button>LOAD MORE</button>
+
+
+             
+             </div>
+           </div>
+      </div>
+
+
+    </div>
+    
+    
+      <div class="wrapper">
+        <div class="contanier-emojy">
+          <i class="fas fa-utensils"></i>
+          <div class="emoji"><img src="assests/img/001-emoji.png" alt=""></div>
+          <span class="num" data-val="28">00</span>
+        </div>
+        <div class="contanier-emojy">
+          <i class="fas fa-smile-beam"></i>
+          <div class="emoji"><img src="assests/img/001-emoji.png" alt=""></div>
+          <span class="num" data-val="250">000</span>
+        </div>
+        <div class="contanier-emojy">
+          <i class="fas fa-list"></i>
+          <div class="emoji"><img src="assests/img/001-emoji.png" alt=""></div>
+          <span class="num" data-val="350">000</span>
+        </div>
+        <div class="contanier-emojy">
+          <i class="fas fa-star"></i>
+          <div class="emoji"><img src="assests/img/001-emoji.png" alt=""></div>
+          <span class="num" data-val="12">00</span>
+        </div>
+      </div>
+      <div class="teacher">
+       
+        <div class="heading">
+            <h2>TEACHER</h2>
+            <div class="lead-line" style="margin-bottom: 20px;
+            margin-top: 0;">
+                <img src="assests/img/graduation-hat.png" alt="">
+            </div>
+            <p>There are many varieations of passages loream Ipsum maksu rez majority have</p>
+           </div><!-- /.heading -->
+         </div>
+         <div class="container">
+          <div class="auto_slider_container  teacher-slider-div">
+            <ul class="auto_slider">
+                <li><img src="assests/img/teacher 1.jpg" alt="">
+                  <div>
+                    <h5>AMILY<br>
+                      English Teacher</h5>
+
+                  </div>
+                  <div class="inner-icon-div">
+                    <div  class=" mx-auto inner-icon">
+                      <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                     <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                     <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                    </div>
+                  </div>
+                </li>
+                <li><img src="assests/img/teacher 2.webp" alt="">
+                 <div>
+                  <h5>KATE WATSON <br>
+                      Sports Teacher</h5>
+                 </div> 
+                 <div class="inner-icon-div">
+                  <div  class=" mx-auto inner-icon">
+                    <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                   <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                   <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                   <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                  </div>
+                </div>
+                </li>
+                <li><img src="assests/img/teacher 3.webp" alt="">
+                 <div>
+                  <h5> kepton <br>
+                    Histry Teacher </h5>
+                 </div> 
+                 <div class="inner-icon-div">
+                  <div  class=" mx-auto inner-icon">
+                    <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                   <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                   <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                   <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                  </div>
+                </div>
+                </li>
+                <li><img src="assests/img/teacher 4.webp" alt="">
+                  <div> <h5> LARA WILEMS <br>
+                              Math teacher</h5></div>
+                              <div class="inner-icon-div">
+                                <div  class=" mx-auto inner-icon">
+                                  <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                                 <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                                 <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                                 <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                                </div>
+                              </div>
+                </li>
+                <li><img src="assests/img/teacher 5.webp" alt="">
+                  <div>
+                    <h5>Taylor <br>
+                        Librarory Teacher</h5>
+                  </div>
+                  <div class="inner-icon-div">
+                    <div  class=" mx-auto inner-icon">
+                      <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                     <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                     <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                    </div>
+                  </div>
+                </li>
+                <li><img src="assests/img/teacher 6.webp" alt="">
+                 <div>
+                   <h5> lorem <br>
+                         Office Teacher</h5>
+                 </div>
+                 <div class="inner-icon-div">
+                  <div  class=" mx-auto inner-icon">
+                    <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                   <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                   <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                   <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                  </div>
+                </div>
+                </li>
+            </ul>
+            <ul class="auto_slider">
+                <li><img src="assests/img/teacher 1.jpg" alt="">
+                  <div>
+                    <h5>AMILY<br>
+                      English Teacher</h5>
+
+                  </div>
+                  <div class="inner-icon-div">
+                    <div  class=" mx-auto inner-icon">
+                      <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                     <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                     <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                    </div>
+                  </div>
+                </li>
+                <li><img src="assests/img/teacher 2.webp" alt="">
+                  <div>
+                    <h5>KATE WATSON <br>
+                        Sports Teacher</h5>
+                   </div>
+                   <div class="inner-icon-div">
+                    <div  class=" mx-auto inner-icon">
+                      <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                     <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                     <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                    </div>
+                  </div>
+                </li>
+                <li><img src="assests/img/teacher 3.webp" alt="">
+                  <div>
+                    <h5> kepton <br>
+                      Histry Teacher </h5>
+                   </div> 
+                   <div class="inner-icon-div">
+                    <div  class=" mx-auto inner-icon">
+                      <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                     <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                     <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                     <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                    </div>
+                  </div>
+                 </li>
+                <li><img src="assests/img/teacher 4.webp" alt="">
+                  <div> <h5> LARA WILEMS <br>
+                    Math teacher</h5></div>
+                    <div class="inner-icon-div">
+                      <div  class=" mx-auto inner-icon">
+                        <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                       <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                       <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                       <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                      </div>
+                    </div>
+                </li>
+                <li><img src="assests/img/teacher 4.webp" alt="">
+                  <div> <h5> LARA WILEMS <br>
+                    Math teacher</h5></div>
+                    <div class="inner-icon-div">
+                      <div  class=" mx-auto inner-icon">
+                        <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                       <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                       <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                       <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                      </div>
+                    </div>
+                </li>
+                <li><img src="assests/img/teacher 4.webp" alt="">
+                  <div> <h5> LARA WILEMS <br>
+                    Math teacher</h5></div>
+                    <div class="inner-icon-div">
+                      <div  class=" mx-auto inner-icon">
+                        <a href="https://www.facebook.com" target="self"><i class="bi bi-facebook"></i></a>
+                       <a href="https://www.Gmail.com"><i class="bi bi-google"></i></a>
+                       <a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                       <a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+         </div>
+
+         <div class="our-events">
+       
+          <div class="heading">
+              <h2>OUR EVENTS</h2>
+              <div class="lead-line" style="margin-bottom: 20px;
+              margin-top: 0;">
+                  <img src="assests/img/graduation-hat.png" alt="">
+              </div>
+              <p>There are many varieations of passages loream Ipsum maksu rez majority have</p>
+             </div><!-- /.heading -->
+           </div>
+
+           <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide">
+             
+              <div class="carousel-inner">
+                <div class="carousel-item active event-div">
+                  <div> <img src="assests/img/over event 1.webp" alt=""></div>
+                  <div><img src="assests/img/over event 2.webp" alt=""></div>
+                  <div class="heading-para"> <h3> OUR NEXT EVENTS</h3>
+                       <p> many varieation of passages lorem ipsum available </p>
+                        <h4>PARENTS DAY</h4>
+                        <p>20-feb-2017,at 10am to 4pm</p>
+                         <h4>STUDY TOUR</h4>
+                         <p> 19-march-2017 to 21-march-2017</p>
+                         <h4>SUMMER SPORTS</h4>
+                         <p>25-april-2017 to 29-april-2017 </p>
+                         <h4>TEACHERS DAY</h4>
+                         <p>17-may-2017, at 10am to 4pm</p>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                  <div> <img src="assests/img/over event 1.webp" alt=""></div>
+                  <div><img src="assests/img/over event 2.webp" alt=""></div>
+                  <div class="heading-para"> <h3> OUR NEXT EVENTS</h3>
+                       <p> many varieation of passages lorem ipsum available </p>
+                        <h4>PARENTS DAY</h4>
+                        <p>20-feb-2017,at 10am to 4pm</p>
+                         <h4>STUDY TOUR</h4>
+                         <p> 19-march-2017 to 21-march-2017</p>
+                         <h4>SUMMER SPORTS</h4>
+                         <p>25-april-2017 to 29-april-2017 </p>
+                         <h4>TEACHERS DAY</h4>
+                         <p>17-may-2017, at 10am to 4pm</p>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                  <div> <img src="assests/img/over event 1.webp" alt=""></div>
+                  <div><img src="assests/img/over event 2.webp" alt=""></div>
+                  <div class="heading-para"> <h3> OUR NEXT EVENTS</h3>
+                       <p> many varieation of passages lorem ipsum available </p>
+                        <h4>PARENTS DAY</h4>
+                        <p>20-feb-2017,at 10am to 4pm</p>
+                         <h4>STUDY TOUR</h4>
+                         <p> 19-march-2017 to 21-march-2017</p>
+                         <h4>SUMMER SPORTS</h4>
+                         <p>25-april-2017 to 29-april-2017 </p>
+                         <h4>TEACHERS DAY</h4>
+                         <p>17-may-2017, at 10am to 4pm</p>
+                      </div>
+                </div>
+              </div>
+              
+            </div>
+           </div>
+          <div class="parent-say">
+              <h3>WHAT PARENTS SAY</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, mollitia!</p>
+          </div>
+
+          <div class="classes">
+       
+            <div class="heading">
+                <h2> CLASSES</h2>
+                <div class="lead-line" style="margin-bottom: 20px;
+                margin-top: 0;">
+                    <img src="assests/img/graduation-hat.png" alt="">
+                </div>
+                <p>There are many varieations of passages loream Ipsum maksu rez majority have</p>
+               </div><!-- /.heading -->
+             </div>
+
+              <div class="container">
+                <div class="class-imgs">
+                  <div><img src="assests/img/class 1.webp" alt="">
+                   <div></div>
+                  </div>
+                  <div><img src="assests/img/class 2.webp" alt=""></div>
+                  <div><img src="assests/img/class 3.webp" alt=""></div>
+               </div>
+              </div>
+
+              <div class="Quick-contact">
+       
+                <div class="heading">
+                    <h2> QUICK CONTACT</h2>
+                    <div class="lead-line" style="margin-bottom: 20px;
+                    margin-top: 0;">
+                        <img src="assests/img/graduation-hat.png" alt="">
+                    </div>
+                    <p>There are many varieations of passages loream Ipsum maksu rez majority have</p>
+                   </div><!-- /.heading -->
+                 </div>
+                  <div class="contact-div">
+                    <div class="container">
+                      <div class="contacts-wrapper">
+                        <div class="contanier-emojy">
+                          <div class="location"><a href=" https://maps.google.com"><i class="bi bi-geo-alt-fill"></i></a>
+                                   <h5>Our location</h5>                      
+                           </div>
+                        </div>
+                        <div class="contanier-emojy">
+                          <div class="phone"><a href="tel:+923309282156"><i class="bi bi-phone-fill"></i></a>
+                                  <h5>Phone number</h5>  
+                          </div>
+                        </div>
+                        <div class="contanier-emojy">
+                          <div class="email-icon"><a href="https://www.Gmail.com"><i class="bi bi-envelope-open"></i></a>
+                              <h5>Email Id</h5>
+                          
+                          </div>
+                        </div>
+                        <div class="contanier-emojy">
+                          <div class="clock"><a href=""><i class="bi bi-clock"></i></a>
+                              <h5>Kidschoole time</h5>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                  <footer class="wrapper">
+                      <div class="container footer">
+                        <div class="contanier-emojy">
+                          <div class="emoji"><li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li> </div>
+                        </div>
+                        <div class="contanier-emojy">
+                          <div class="emoji"><li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li></div>
+                        </div>
+                        <div class="contanier-emojy third">
+                          <div class="emoji"><li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li></div>
+                        </div>
+                        <div class="contanier-emojy fourth">
+                          <div class="emoji"><li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required></div>
+                        </div>
+                      </div>
+                      <div>
+                        
+                  </footer>
+                  <div>
+                    <div  class="bottom-end">
+                      <div class="facebook-icon"> <a href="https://www.facebook.com" target="self"></a><i class="bi bi-facebook"></i></div>
+                      <div class="gmail-icon"><a href="https://www.Gmail.com"><i class="bi bi-google"></i></a></div>
+                      <div class="instagram-icon"><a href="htttp://www.instagram.com"><i class="bi bi-instagram"></i></a></div>
+                      <div class="twitter-icon"><a href="http://www.twitter.com"><i class="bi bi-twitter"></i></a></div>
+                             </div>
+                  </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assests/js/app,js"></script>
+  </body>
+</html>
